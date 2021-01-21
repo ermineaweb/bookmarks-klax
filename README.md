@@ -10,17 +10,7 @@ http://localhost:5500
 ### Production
 
 ```
-cd server && npm run build
-cd client && npm run build
-cd server && node dist/index.js
-```
-http://localhost
-
-
-### Docker
-
-```
-docker-compose --build -up -d
+cd docker && docker-compose --build -up -d
 ```
 
 
