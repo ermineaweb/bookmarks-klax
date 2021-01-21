@@ -53,7 +53,7 @@ function Home() {
       <Bookmarks bookmarks={bookmarksState} handleDelete={handleDelete} />
       <div className={styles.pagination}>
         {pages.map((page) => (
-          <div key={page} onClick={changePage(page)}>
+          <div style={{ color: page === actualPage ? "#e82d88" : "" }} key={page} onClick={changePage(page)}>
             {page}
           </div>
         ))}
