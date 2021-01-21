@@ -11,8 +11,8 @@ services:
     networks:
       - default
     environment:
-      - VIRTUAL_HOST=bookmarks.erminea.fr
-      - LETSENCRYPT_HOST=bookmarks.erminea.fr
+      - VIRTUAL_HOST=klaxbookmarks.erminea.fr
+      - LETSENCRYPT_HOST=klaxbookmarks.erminea.fr
       - LETSENCRYPT_EMAIL=ermineaweb@gmail.com
       - NODE_ENV=production
       - PORT=80

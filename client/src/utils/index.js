@@ -1,4 +1,6 @@
-function formatDate(date) {
+function formatDate(stringDate) {
+  if (!stringDate) return;
+  const date = new Date(stringDate);
   const months = [
     "Janvier",
     "Février",
@@ -13,7 +15,6 @@ function formatDate(date) {
     "Novembre",
     "Décembre",
   ];
-  if (!date) return;
   return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
 }
 

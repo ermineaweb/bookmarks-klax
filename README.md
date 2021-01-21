@@ -1,4 +1,4 @@
-## Develop
+### Develop
 
 ```
 cd server && npm run start
@@ -7,7 +7,7 @@ cd client && npm run start
 http://localhost:5500
 
 
-## Production
+### Production
 
 ```
 cd server && npm run build
@@ -17,8 +17,7 @@ cd server && node dist/index.js
 http://localhost
 
 
-
-## Docker
+### Docker
 
 ```
 docker-compose --build -up -d
