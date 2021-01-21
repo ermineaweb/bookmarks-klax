@@ -1,0 +1,29 @@
+.root {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 100vh;
+}
+
+.root > * {
+  margin: 20px 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 80px;
+}
+
+.submit > * {
+  width: 120px;
+}

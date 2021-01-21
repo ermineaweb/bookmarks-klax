@@ -1,0 +1,8 @@
+.root {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 280px;
+  margin: 5px;
+  align-items: center;
+  justify-content: center;
+}

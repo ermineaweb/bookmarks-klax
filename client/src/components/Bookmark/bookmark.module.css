@@ -1,0 +1,60 @@
+.root {
+  position: relative;
+  display: flex;
+  width: 300px;
+  height: 140px;
+  margin: 12px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c4c4c4;
+  transition: transform 150ms;
+  cursor: default;
+}
+
+.root:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px 0px #adadad;
+}
+
+.actions {
+  grid-area: actions;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actions > * {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c4c4c4;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.actions > * {
+  color: #e82d88;
+}
+.actions > *:hover {
+  color: #b81263;
+}
+
+.infos {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+.infos > div {
+  width: 260px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left;
+}

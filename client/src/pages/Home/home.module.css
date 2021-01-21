@@ -1,0 +1,41 @@
+.root {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  height: 100vh;
+}
+
+.root > * {
+  margin: 20px 0;
+}
+
+.bookmarks {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions {
+  display: flex;
+  height: 80px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0px;
+}
+
+.pagination > * {
+  margin: 0 10px;
+  cursor: pointer;
+  border: 1px solid #aaaaaa;
+  padding: 5px;
+  border-radius: 100px;
+}
+
+.pagination > *:hover {
+  border: 1px solid #e82d88;
+}
