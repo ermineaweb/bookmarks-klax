@@ -1,4 +1,5 @@
-### Develop
+## Develop
+
 ```
 cd server && npm run start
 cd client && npm run start
@@ -6,7 +7,8 @@ cd client && npm run start
 http://localhost:5500
 
 
-### Production
+## Production
+
 ```
 cd server && npm run build
 cd client && npm run build
@@ -15,22 +17,26 @@ cd server && node dist/index.js
 http://localhost
 
 
-### Docker
+
+## Docker
+
 ```
 docker-compose --build -up -d
 ```
 
 
-Bookmarks router :
+### Bookmarks router :
 - define API endpoints
 - check required params and map them if needed
 - send to bookmarks service
 
-Bookmarks service :
+
+### Bookmarks service :
 - contains all the logic when Add, Get, Update, Delete a bookmark
 - decoupled from the API (we can swap to graphql, fastify...)
 - decoupled from database : we can swap database easily without change the logic
 
-Bookmarks repository :
+
+### Bookmarks repository :
 - CRUD on datas
 - implements interface to easily switch database without break anything
