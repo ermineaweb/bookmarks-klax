@@ -4,7 +4,10 @@
 cd server && npm run start
 cd client && npm run start
 ```
-http://localhost:5500
+http://localhost:3000
+api
+http://localhost:5500/bookmarks
+
 
 
 ### Production
@@ -15,6 +18,7 @@ cd client && npm run build
 cd server && node dist/index.js
 ```
 http://localhost
+
 
 
 ### Docker

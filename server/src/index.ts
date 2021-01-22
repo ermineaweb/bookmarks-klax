@@ -9,6 +9,7 @@ dotenv.config();
 
 const NODE_ENV = process.env.NODE_ENV || "production";
 const PORT = process.env.PORT || 80;
+const DOCKER = process.env.DOCKER;
 
 const app = express();
 
@@ -23,7 +24,7 @@ applyRouters(app);
 // we serve directly react via express, this is needed for react routing
 if (NODE_ENV === "production") {
   app.use((req, res) => {
-    res.sendFile(path.resolve("/app/client/build/index.html"));
+    res.sendFile(path.resolve(DOCKER === "true" ? "/app/client/build/index.html" : "../client/build/index.html"));
   });
 }
 
