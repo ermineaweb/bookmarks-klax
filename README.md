@@ -24,7 +24,7 @@ http://localhost
 ### Docker
 
 ```
-cd docker && docker-compose --build -up -d
+cd docker && docker-compose --build up -d
 ```
 
 
