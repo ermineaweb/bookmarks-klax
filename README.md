@@ -6,10 +6,6 @@ This is an interview project.
 cd server && npm run start
 cd client && npm run start
 ```
-http://localhost:3000
-api
-http://localhost:5500/bookmarks
-
 
 
 ### Production
@@ -19,8 +15,6 @@ cd server && npm run build
 cd client && npm run build
 cd server && node dist/index.js
 ```
-http://localhost
-
 
 
 ### Docker
